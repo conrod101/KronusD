@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}Profile{% endblock %}
+
+{% block main %}
+
+<div class="grid-container">
+    <div class="item1">
+         <img class="img-circle" src="{{ url_for("static", filename='mypicture2.jpg')}}" alt="Rushane's Picture" />
+         <div class="center-space">
+                <h3> Rushane Barnes </h3>
+                
+                <p> @rbarnes </p>
+
+                <p> Portmore, Jamaica </p>
+
+                <p> Joined July, 2018 </p>
+        </div>
+    </div>
+    
+    <div class="item2">
+        <div class="center-space-two">
+        <p> I grew up wanting to study Computer Science. As a young lad growing up, I was always fascinated by computers. 
+            My current career objective is to be a Software Engineer. </p>
+            
+        </div>
+        
+        <div>
+           <div class="profile-stats">
+
+				<ul>
+					<li><span class="profile-stat-count">164</span> posts</li>
+					<li><span class="profile-stat-count">188</span> followers</li>
+					<li><span class="profile-stat-count">206</span> following</li>
+				</ul>
+
+			</div>
+        </div>
+        
+        <div class="center-space-two">
+        
+        <button class="button">Follow</button>
+        </div>
+        
+    </div>
+    
+    Profile Created: {{ name }}
+    
+
+
+     
+
+
+
+</div>
+
+
+{% endblock %}
